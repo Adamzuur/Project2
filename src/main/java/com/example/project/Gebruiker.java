@@ -7,7 +7,8 @@ public class Gebruiker {
     private String gebruikersnaam;
     private String wachtwoord;
     private String email;
-    private final String AICHAT_BESTAND;
+    //private final String AICHAT_BESTAND;
+
 
     public String getWachtwoord() {
         return wachtwoord;
@@ -27,14 +28,14 @@ public class Gebruiker {
     public void setWachtwoord(String wachtwoord) {
         this.wachtwoord = wachtwoord;
     }
-    public Gebruiker(String gebruikersnaam, String wachtwoord, String email, String AICHAT_BESTAND) {
+    public Gebruiker(String gebruikersnaam, String wachtwoord, String email) {
         this.gebruikersnaam = gebruikersnaam;
         this.wachtwoord = wachtwoord;
         this.email = email;
-        this.AICHAT_BESTAND = gebruikersnaam + "_AICHAT.csv";
-        initBudgetBestand();
+        //this.AICHAT_BESTAND = gebruikersnaam + "_AICHAT.csv";
+        //initBudgetBestand();
     }
-    private void initBudgetBestand() {
+    /*private void initBudgetBestand() {
         File budgetBestand = new File(this.AICHAT_BESTAND);
         if (!budgetBestand.exists()) {
             try {
@@ -44,5 +45,5 @@ public class Gebruiker {
                 System.out.println("Fout bij het aanmaken van het budgetbestand voor gebruiker " + var10001 + ": " + var3.getMessage());
             }
         }
-    }
+    }     */
 }
